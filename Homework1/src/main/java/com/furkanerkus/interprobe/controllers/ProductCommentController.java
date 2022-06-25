@@ -28,7 +28,7 @@ public class ProductCommentController {
     }
 
     @GetMapping("/showCommentsByProduct/{id}")
-    public List<ProductComment> showCommentsByProduct(@PathVariable Long id) {
+    public List<ProductComment> showCommentsByProduct(@PathVariable("Product Id: ") Long id) {
         return productCommentDao.findAllByProduct_Id(id);
     }
 
