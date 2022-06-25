@@ -13,7 +13,6 @@ import java.util.Set;
 @Table(name = "USERS")
 @Getter
 @Setter
-//@JsonIgnoreProperties({"hibernateLazyInitializer","handler","productComments"})
 public class User extends BaseEntity{
 
     @Id
